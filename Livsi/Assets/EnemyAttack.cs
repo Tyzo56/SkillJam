@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
+    [SerializeField] private string targetTag;
+    [SerializeField] private int damage;
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "Player")
+        if (collision.transform.tag == targetTag)
         {
-            Debug.Log("атака!!!!!");
+            collision.gameObject.GetComponent<BaseHealth>().ReccountHealth(-damage);
         }
     }
 }
