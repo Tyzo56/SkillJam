@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 input2d = new Vector3(inputX, 0f, 0f); // значения в вектор
 
+       Flip();
         Jump();
         Movement(input2d);
     }
@@ -34,6 +35,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             rg.AddForce(transform.up, ForceMode.Impulse); //использует rigidbody чтобы добавить силу к объекту чтобы был прыжок
+        }
+    }
+    void Flip()
+    {
+
+        if (inputX > 0)
+        {
+            transform.localScale = new Vector3(-1f, 1.9f, 1f);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1f, 1.9f, 1f);
         }
     }
 }
