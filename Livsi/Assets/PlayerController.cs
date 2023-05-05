@@ -42,11 +42,13 @@ public class PlayerController : MonoBehaviour
 
         if (inputX > 0)
         {
-            transform.localScale = new Vector3(-1f, 1.9f, 1f);
+           // transform.localScale = new Vector3(-1f, 1.9f, 1f);
+            transform.localRotation = Quaternion.Euler(0, 180f, 0);
         }
         else
         {
-            transform.localScale = new Vector3(1f, 1.9f, 1f);
+         //   transform.localScale = new Vector3(1f, 1.9f, 1f);
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
