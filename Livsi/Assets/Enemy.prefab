@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Player
-  damage: 1
+  damage: 10
 --- !u!114 &7536543610931030559
 MonoBehaviour:
   m_ObjectHideFlags: 0
