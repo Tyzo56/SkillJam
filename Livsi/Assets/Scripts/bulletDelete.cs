@@ -5,7 +5,7 @@ using UnityEngine;
 public class bulletDelete : MonoBehaviour
 {
     float speed = 4f;
-    float TimeToDisable = 5;
+    float TimeToDisable = 2f;
     // Start is called before the first frame update
     void Start()
     {
