@@ -13,6 +13,14 @@ public class BaseHealth : MonoBehaviour
         if(currentHealth <= 0)
         {
             transform.gameObject.SetActive(false);
+
         }
     }
+    
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
+
+    
 }
