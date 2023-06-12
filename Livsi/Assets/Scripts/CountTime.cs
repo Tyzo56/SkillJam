@@ -11,6 +11,6 @@ public class CountTime : MonoBehaviour
     void Update()
     {
         time += 1 * Time.deltaTime;
-        TimeText.text = $"счёт: {time}";
+        TimeText.text = $"счёт: {Mathf.Round( time)}";
     }
 }
